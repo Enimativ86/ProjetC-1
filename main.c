@@ -7,7 +7,7 @@
   cellule **plateau=NULL;
   int **age=NULL;
   fleche *rose=NULL;
-  carte *Vcartes=NULL,*Rcartes=NULL;
+  hand Vcartes=NULL,Rcartes=NULL;
   int cpt=0,res,tour=0,N=0;
   joueur *tabjoueurs;
 
@@ -22,7 +22,7 @@ int main()
   while(cpt!=-1){
     tour++;
     affichage(plateau,tour,&N);
-    res=pose(plateau,rose,tabjoueurs[cpt],age,tour,&N);
+    res=pose(plateau,rose,tabjoueurs[cpt],age,tour,&N,Vcartes,Rcartes);
     cpt=(cpt+1)%2;
     if(res==0){
       cpt=checkfin(plateau,rose,tabjoueurs,cpt,&N);

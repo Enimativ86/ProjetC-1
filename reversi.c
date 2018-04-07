@@ -115,19 +115,20 @@ void capture(cellule **plateau, fleche *rose, int x, int y, int **age, cellule c
 
 //pose d'un pion
 //renvoie 0 si le joueur n'a pas pu jouer
-int pose(cellule **plateau, fleche *rose, joueur j, int **age, int tour, int *N)
+int pose(cellule **plateau, fleche *rose, joueur j, int **age, int tour, int *N, hand Rcartes, hand Vcartes)
 {
   int x,y,s=0;
   cellule c=getSymbole(j.couleur);
 
-  printf("C'est a %c de jouer\n",c);
-
   if(verifcouprestant(plateau,rose,j,N)==0){
     system("clear");
     printf("%c ne peux pas jouer\n",c);
+    jouercarte(c,Vcartes,Rcartes);
     trahison(plateau,rose,age,tour,N);
     return(0);
   }
+
+  printf("C'est a %c de jouer\n",c);
 
   while(s==0){
     printf("Entrez la case ou vous souhaitez jouer %c (au format x,y)\n",getSymbole(j.couleur));
