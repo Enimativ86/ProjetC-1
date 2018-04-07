@@ -1,6 +1,8 @@
 #ifndef __INIT__
 #define __INIT__
 
+  #include "cartes.h"
+
   joueur *initJoueurs();
   fleche *initrose();
   int **initage(int *N);

@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include "reversi.h"
 #include "initreversi.h"
+#include "cartes.h"
 
   cellule **plateau=NULL;
   int **age=NULL;
   fleche *rose=NULL;
-  carte *Vcartes,*Rcartes;
+  carte *Vcartes=NULL,*Rcartes=NULL;
   int cpt=0,res,tour=0,N=0;
   joueur *tabjoueurs;
 
