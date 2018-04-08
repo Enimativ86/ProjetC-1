@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#include "reversi.h"
 #include "initreversi.h"
-#include "cartes.h"
 
 #define ERREUR_ALLOCATION_MEMOIRE 1
 

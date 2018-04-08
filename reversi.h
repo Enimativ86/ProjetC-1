@@ -1,7 +1,7 @@
 #ifndef __REVERSI__
 #define __REVERSI__
 
-  #include "cartes.h"
+  struct hand;
 
   typedef enum{vide=0,trou,bombe,vert,rouge}cellule;
   typedef struct{

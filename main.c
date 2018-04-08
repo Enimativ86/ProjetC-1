@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "reversi.h"
 #include "initreversi.h"
-#include "cartes.h"
 
   cellule **plateau=NULL;
   int **age=NULL;

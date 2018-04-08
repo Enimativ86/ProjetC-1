@@ -4,8 +4,7 @@
 #include <limits.h>
 #include "reversi.h"
 #include "bombes.h"
-#include "traitre.h"
-#include "cartes.h"
+
 
 #define ERREUR_getSymbole 2
 #define mode 'D'

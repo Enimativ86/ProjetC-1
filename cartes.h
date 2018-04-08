@@ -1,6 +1,7 @@
 #ifndef __CARTES__
 #define __CARTES__
 
+
   typedef enum{changementdecamp=0,conversion,ban,acceleration,effondrement,immunite,poselibre}carte;
   struct cell{
     struct cell *suiv, *prec;
@@ -10,7 +11,7 @@
 
   hand inithand();
   void freehand(hand h);
-  void pioche(hand h);
+  void ajoutercarte(hand h);
   hand piochemain(int nbcartes);
   void affichercarte(carte c);
   void affichermain(hand h);
